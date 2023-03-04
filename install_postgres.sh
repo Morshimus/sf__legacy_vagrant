@@ -1,8 +1,8 @@
 #!/bin/bash
-sudo source /etc/os-release
+source /etc/os-release
 sudo yum install -y postgresql postgresql-server postgresql-contrib
 
-if [ $VERSION -eq 7 ]; then
+if [ $VERSION_ID -eq 7 ]; then
  sudo -u postgres /usr/bin/initdb /var/lib/pgsql/data
  sudo systemctl start postgresql
 else

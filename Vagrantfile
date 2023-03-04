@@ -31,6 +31,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         s.privileged = true
       end
     end
+
+
     config.vm.define vm_hostname_2 do |pg|
         # Global Box details
         pg.vm.box = vm_box_2
@@ -50,5 +52,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
           s.path = 'install_postgres.sh'
           s.privileged = true
         end
-      end
+    end
   end
