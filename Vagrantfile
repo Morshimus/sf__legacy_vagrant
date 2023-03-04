@@ -2,7 +2,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 vm_box = ENV['BOX'] ? ENV['BOX'] : 'generic/centos6'
-vm_hostname = 'vagrantpgsql'
+vm_hostname = 'morsh_vagrant_pgsql_8_4'
 
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 # Minimum Vagrant Version
